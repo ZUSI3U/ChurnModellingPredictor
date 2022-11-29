@@ -3,7 +3,7 @@ import random
 from catboost import CatBoostClassifier # CatBoost
 
 model = CatBoostClassifier()
-model.load_model(r"app/catboost_model/model.json", "json")
+model.load_model(r"catboost_model/model.json", "json")
 
 #Caching the model for faster loading
 @st.cache
